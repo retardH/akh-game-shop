@@ -1,0 +1,456 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+:root {
+  --pale-blue: #2563eb;
+  --dark-blue: #172554;
+  --active-yellow: #facc15;
+  --normal-blue: #1e40af;
+}
+
+.wrapper {
+  margin: 0 auto;
+  background-color: var(--dark-blue);
+  position: relative;
+  height: 100vh;
+  overflow: scroll;
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    max-width: 700px;
+
+  } 
+}
+
+
+.nav-container {
+  position: sticky;
+  top: 0;
+  background-color: var(--dark-blue);
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  padding: 12px 8px;
+}
+
+.top-nav .menu-logo {
+  color: white;
+  font-size: 36px;
+}
+
+.top-nav h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+.top-nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+.banner-img-container {
+  width: 100%;
+}
+
+.banner-img-container img {
+  width: 100%;
+  max-height: 180px;
+  min-height: 150px;
+  object-position: center;
+}
+
+.banner-text {
+  font-weight: 400;
+  word-spacing: 4px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background: linear-gradient(180deg, var(--pale-blue),var(--dark-blue));
+  padding: 24px 8px 18px 8px;
+  width: 60%;
+}
+
+.side-bar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 18px;
+}
+
+.side-bar__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  /* margin-bottom: 18px; */
+}
+
+.side-bar__item h2 {
+  font-size: 18px;
+}
+
+.side-bar__icon {
+  margin-right: 14px;
+  font-size: 28px;
+}
+
+.home {
+  
+  display: grid;
+  padding: 6px 14px;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  overflow-y: scroll;
+}
+
+.hero-img__container img {
+  width: 100%;
+  min-height: 110px;
+  max-height: 162px;
+  box-shadow: 0px 4px 6px rgba(252, 251, 251, 0.1);
+
+}
+
+.hero-img__container figcaption {
+  text-align: center;
+}
+
+.last-hero-img {
+  grid-column: span 2;
+  padding: 0 12px;
+}
+
+.footer {
+  display: flex;
+  /* position:sticky; */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 88;
+  padding: 12px 0;
+  background:linear-gradient(180deg, var(--dark-blue), var(--pale-blue));
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-icon {
+  color: white;
+  font-size: 24px;
+}
+
+.footer-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  gap: 8px;
+}
+
+.footer-item:visited {
+  color: white;
+}
+
+.footer-item span {
+  font-size: 12px;
+  
+  text-decoration: none;
+  color: white;
+  
+}
+
+.wallet-container {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 32px;
+  flex-direction: column;
+}
+
+.wallet-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.email-input-container {
+  width: 100%;
+  background-color: white;
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.email-input-container .input-icon {
+  color: var(--dark-blue);
+  font-size: 24px;
+}
+
+.email-input-container input {
+  background-color: var(--pale-blue);
+  flex: 1;
+  padding: 12px 2px;
+  border: none;
+  outline: none;
+  color: white
+}
+
+.email-input-container input::placeholder {
+  color: white;
+}
+
+.password-input-container {
+  width: 100%;
+}
+
+.password-input-container input {
+  background-color: var(--pale-blue);
+  padding: 12px 2px;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+}
+
+.login-btn {
+  background-color: var(--active-yellow);
+  padding: 12px 0;
+  text-align: center;
+  width: 50%;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 24px;
+}
+
+.forget-psw-btn {
+  background-color: none;
+  border: none;
+  outline: none;
+  color: red;
+  padding: 8px;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.line {
+  width: 100%;
+  background-color: white;
+  height: 2px;
+}
+
+.create-btn {
+  background-color: var(--pale-blue);
+  padding: 12px 0;
+  text-align: center;
+  width: 50%;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 24px;
+}
+
+.message-container {
+  padding: 12px;
+}
+
+.message-container h5 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+.message-box {
+  padding: 12px;
+  background-color: var(--normal-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 12px;
+}
+
+.message-box span {
+  font-size: 14px;
+}
+
+.message-title {
+  color: greenyellow;
+}
+
+.message-time {
+  color: var(--active-yellow)
+}
+
+.contact-container {
+  padding: 12px;
+}
+
+.contact-container h5 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-item {
+  padding: 8px;
+  background-color: var(--normal-blue);
+  width: 100%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-icon {
+  font-size: 28px;
+}
+
+/* OTP Input Styling */
+
+.otp-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.otp-input input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 24px;
+  margin: 0 5px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  outline: none;
+}
+
+.acc-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.form-text {
+  font-size: 18px;
+}
+
+.acc-input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.acc-input-container input {
+  flex: 1;
+  padding: 8px 6px;
+  background-color: var(--normal-blue);
+  height: 50px;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.acc-input-container input::placeholder {
+  color: white;
+}
+
+.acc-input-icon {
+  padding: 8px;
+  color: var(--dark-blue);
+  font-size: 50px;
+  background-color: white;
+  height: 50px;
+
+}
+
+.otp-btn {
+  padding: 8px 2px;
+  background-color: var(--active-yellow);
+  height: 50px;
+  width: 50px;
+  font-size: 14px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.submit-btn {
+  background-color: var(--active-yellow);
+  padding: 12px 0;
+  text-align: center;
+  width: 50%;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 24px;
+}
+
+.acc-form a {
+  color: red;
+  text-underline-offset: 4px;
+  text-decoration: underline;
+}
+
+
+
