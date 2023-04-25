@@ -3,6 +3,7 @@ import bannerImg from "./../assets/banner-img.jpg";
 import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import Sidebar from "./sidebar";
+import LanguageModal from "./language-modal";
 const Navbar = ({
   onMenuClick,
   isMenuClicked,
