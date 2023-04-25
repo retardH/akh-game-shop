@@ -1,6 +1,6 @@
-import mobileLegendImg from './../../public/mobile-legend.jpg'
-import pubgImg from './../../public/pubg.jpg'
-import lolImg from './../../public/league-of-legends.jpg'
+import mobileLegendImg from './../assets/mobile-legend.jpg'
+import pubgImg from './../assets/pubg.jpg'
+import lolImg from './../assets/league-of-legends.jpg'
 import HeroImg from './hero-img';
 
 const Home = () => {

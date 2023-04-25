@@ -1,5 +1,5 @@
-import logoImg from "./../../public/navbar-logo.jpg";
-import bannerImg from "./../../public/banner-img.jpg";
+import logoImg from "./../assets/navbar-logo.jpg";
+import bannerImg from "./../assets/banner-img.jpg";
 import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import Sidebar from "./sidebar";

@@ -1,4 +1,4 @@
-import logoImg from "./../../public/navbar-logo.jpg";
+import logoImg from "./../assets/navbar-logo.jpg";
 import { FaUserAlt } from "react-icons/fa";
 import OTPInput from "./otp-input";
 import { Link } from "react-router-dom";

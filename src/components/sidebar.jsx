@@ -1,4 +1,4 @@
-import logoImg from './../../public/navbar-logo.jpg'
+import logoImg from './../assets/navbar-logo.jpg'
 import {FaHome} from 'react-icons/fa'
 import {DiAndroid} from 'react-icons/di'
 import {MdLanguage} from 'react-icons/md'
